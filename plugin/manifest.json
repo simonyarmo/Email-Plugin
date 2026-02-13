@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "My First Plugin",
+    "version": "1.0",
+    "description": "A simple browser plugin",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage"
+    ],
+    "host_permissions": [
+      "https://mail.google.com/*",
+      "http://localhost:3212/*"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://mail.google.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Responder</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 500px;
+    background-color: #f5f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    width: 90%;
+  }
+  h1 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  label {
+    display: block;
+    margin: 10px 0 4px;
+    font-size: 13px;
+    color: #34495e;
+  }
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    border-radius: 4px;
+    border: 1px solid #bdc3c7;
+  }
+  select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px;
+    font-size: 13px;
+    border-radius: 4px;
+    border: 1px solid #bdc3c7;
+    margin-bottom: 10px;
+  }
+  button {
+    width: 100%;
+    padding: 8px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #2980b9;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Email Responder</h1>
+
+    <label for="userQuery">Your Query:</label>
+    <textarea id="userQuery" rows="3" placeholder="Enter your query here"></textarea>
+
+    <label for="relativeInfo">Relative Information:</label>
+    <textarea id="relativeInfo" rows="3" placeholder="Add any context or info"></textarea>
+
+    <label for="toneSelect">Tone:</label>
+    <select id="toneSelect">
+      <option value="formal">Formal</option>
+      <option value="informal">Informal</option>
+      <option value="friendly">Friendly</option>
+      <option value="concise">Concise</option>
+      <option value="apologetic">Apologetic</option>
+    </select>
+
+    <button id="submitBtn">Generate Response</button>
+  </div>
+</body>
+</html>
