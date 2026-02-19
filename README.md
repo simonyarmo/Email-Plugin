@@ -19,6 +19,7 @@ On Windows:
 Bash
 python -m venv venv
 .\venv\Scripts\activate
+
 On macOS/Linux:
 
 Bash
