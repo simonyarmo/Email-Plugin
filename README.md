@@ -16,15 +16,19 @@ Creating a virtual environment keeps your project dependencies isolated.
 
 On Windows:
 
-Bash
+
 python -m venv venv
+
+
 .\venv\Scripts\activate
 
 
 On macOS/Linux:
 
-Bash
+
 python3 -m venv venv
+
+
 source venv/bin/activate
 
 ### 3. Install Dependencies
